@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Report</title>
+</head>
+<body>
+<div id="container" class="container">
+  <img class="logo" src="img/Transparent.png" alt="" srcset="" />
+  <img src="img/bubbles.png" alt="" class="bubbles" />
+
+  <h1 class="header-nav"></h1>
+
+  <h4 class="header-date-range"></h4>
+
+  <!-- CELKOVA KVALITA OVZDUSIA WIDGET -->
+  <div class="main-value-widget">
+    <h2>Celková kvalita ovzdušia</h2>
+
+    <div class="main-value-subdiv">
+      <div class="main-value-subdiv1">
+        <p class="hodnotenie-AQI"></p>
+        <p class="value-AQI" id="tvAQI">A</p>
+      </div>
+
+      <div class="main-value-subdiv2">
+        <p class="sub-text1">priemerná hodnota kvality ovzdušia IAQ</p>
+        <div class="progress" id="progress_0">
+          <div class="progress-bar">
+            <div class="progressing"></div>
+            <span class="circle"></span>
+          </div>
+        </div>
+        <img src="img/kvalita-ovzdusia1.svg" alt="" class="biela-scale" />
+      </div>
+    </div>
+  </div>
+
+  <!-- SEDE MALE WIDGETY -->
+  <div class="secondary-value-widget-container">
+
+    <!-- CO2 -->
+    <div class="secondary-value-widget">
+      <div class="secondary-value-div">
+        <div class="secondary-value-subdiv">
+          <h2>CO2</h2>
+          <p id="value-co2" class="value-secondary"></p>
+        </div>
+        <div class="hodnotenie-co2"></div>
+      </div>
+      <div class="progress-1" id="progress_0-2">
+        <div class="progress-bar-1">
+          <div class="progressing-2"></div>
+          <span class="circle-2"></span>
+        </div>
+      </div>
+      <img src="img/CO2.svg" alt="" class="seda-scale-2" />
+    </div>
+
+    <!-- Teplota -->
+    <div class="secondary-value-widget">
+      <div class="secondary-value-div">
+        <div class="secondary-value-subdiv">
+          <h2>Teplota</h2>
+          <p id="value-airTemperature" class="value-secondary"></p>
+        </div>
+        <div class="hodnotenie-airTemperature"></div>
+      </div>
+
+      <div class="progress-1" id="progress_0-4">
+        <div class="progress-bar-1">
+          <div class="progressing-4"></div>
+          <span class="circle-4"></span>
+        </div>
+      </div>
+      <img src="img/Teplota.svg" alt="" class="seda-scale-4" />
+    </div>
+
+    <!-- Prasnost -->
+    <div class="secondary-value-widget">
+      <div class="secondary-value-div">
+        <div class="secondary-value-subdiv">
+          <h2>Prašnosť</h2>
+          <p id="value-PM10" class="value-secondary"></p>
+        </div>
+        <div class="hodnotenie-prasnost"></div>
+      </div>
+      <div class="progress-1" id="progress_0-1">
+        <div class="progress-bar-1">
+          <div class="progressing-1"></div>
+          <span class="circle-1"></span>
+        </div>
+      </div>
+      <img src="img/Prasnost.svg" alt="" class="seda-scale-1" />
+    </div>
+
+    <!-- Vlhkost -->
+    <div class="secondary-value-widget">
+      <div class="secondary-value-div">
+        <div class="secondary-value-subdiv">
+          <h2>Vlhkosť</h2>
+          <p id="value-humidity" class="value-secondary"></p>
+        </div>
+        <div class="hodnotenie-humidity"></div>
+      </div>
+      <div class="progress-1" id="progress_0-5">
+        <div class="progress-bar-1">
+          <div class="progressing-5"></div>
+          <span class="circle-5"></span>
+        </div>
+      </div>
+      <img src="img/Vlhkost.svg" alt="" class="seda-scale-5" />
+    </div>
+
+    <!-- Prchavé látky -->
+    <div class="secondary-value-widget">
+      <div class="secondary-value-div">
+        <div class="secondary-value-subdiv">
+          <h2>Prchavé látky</h2>
+          <p id="value-VOCi" class="value-secondary"></p>
+        </div>
+        <div class="hodnotenie-VOCi"></div>
+      </div>
+      <div class="progress-1" id="progress_0-3">
+        <div class="progress-bar-1">
+          <div class="progressing-3"></div>
+          <span class="circle-3"></span>
+        </div>
+      </div>
+      <img src="img/Prchave-latky.svg" alt="" class="seda-scale-3" />
+    </div>
+
+    <!-- Tlak -->
+    <div class="secondary-value-widget">
+      <div class="secondary-value-div">
+        <div class="secondary-value-subdiv">
+          <h2>Tlak</h2>
+          <p id="value-airPressure" class="value-secondary"></p>
+        </div>
+        <div class="hodnotenie-airPressure"></div>
+      </div>
+      <div class="progress-1" id="progress_0-6">
+        <div class="progress-bar-1">
+          <div class="progressing-6"></div>
+          <span class="circle-6"></span>
+        </div>
+      </div>
+      <img src="img/Tlak.svg" alt="" class="seda-scale-6" />
+    </div>
+
+  </div>
+
+
+  <h5></h5>
+
+
+
+  <!-- FOOTER -->
+
+  <img src="img/bubbles.png" alt="" class="bubbles2" />
+  <div class="footer">
+    <img class="footer-info-1" src="img/location.svg" alt="" />
+  </div>
+  <img class="qr" src="img/qr.svg" alt="" />
+
+
+
+
+
+
+
+  <img class="logo2" src="img/Transparent.png" alt="" srcset="" />
+  <img src="img/bubbles.png" alt="" class="bubbles3" />
+
+  <h1 class="header-nav"></h1>
+
+
+
+
+  <!-- SEDE MALE WIDGETY -->
+  <div class="secondary-value-widget-container">
+
+    <!-- Riziko plesni -->
+    <div class="secondary-value-widget">
+      <div class="secondary-value-div">
+        <div class="secondary-value-subdiv">
+          <h2>Riziko plesní</h2>
+          <p id="value-mold" class="value-secondary"></p>
+        </div>
+        <div class="hodnotenie-mold"></div>
+      </div>
+      <div class="progress-1" id="progress_0-7">
+        <div class="progress-bar-1">
+          <div class="progressing-7"></div>
+          <span class="circle-7"></span>
+        </div>
+      </div>
+      <img src="img/riziko.svg" alt="" class="seda-scale-7" />
+    </div>
+
+    <!-- Riziko infekcie -->
+    <div class="secondary-value-widget">
+      <div class="secondary-value-div">
+        <div class="secondary-value-subdiv">
+          <h2>Riziko infekcie</h2>
+          <p id="value-infection" class="value-secondary"></p>
+        </div>
+        <div class="hodnotenie-infection"></div>
+      </div>
+
+      <div class="progress-1" id="progress_0-8">
+        <div class="progress-bar-1">
+          <div class="progressing-8"></div>
+          <span class="circle-8"></span>
+        </div>
+      </div>
+      <img src="img/riziko.svg" alt="" class="seda-scale-8" />
+    </div>
+
+    <!-- CO -->
+    <div class="secondary-value-widget">
+      <div class="secondary-value-div">
+        <div class="secondary-value-subdiv">
+          <h2>CO</h2>
+          <p id="value-CO" class="value-secondary"></p>
+        </div>
+        <div class="hodnotenie-CO"></div>
+      </div>
+      <div class="progress-1" id="progress_0-9">
+        <div class="progress-bar-1">
+          <div class="progressing-9"></div>
+          <span class="circle-9"></span>
+        </div>
+      </div>
+      <img src="img/Prasnost.svg" alt="" class="seda-scale-1" />
+    </div>
+
+    <!-- Radiacia -->
+    <div class="secondary-value-widget">
+      <div class="secondary-value-div">
+        <div class="secondary-value-subdiv">
+          <h2>Radiácia</h2>
+          <p id="value-radiacia" class="value-secondary"></p>
+        </div>
+        <div class="hodnotenie-radiacia"></div>
+      </div>
+      <div class="progress-1" id="progress_0-10">
+        <div class="progress-bar-1">
+          <div class="progressing-10"></div>
+          <span class="circle-10"></span>
+        </div>
+      </div>
+      <img src="img/Vlhkost.svg" alt="" class="seda-scale-5" />
+    </div>
+
+    <!-- PM 2.5 -->
+    <div class="secondary-value-widget">
+      <div class="secondary-value-div">
+        <div class="secondary-value-subdiv">
+          <h2>PM 2.5</h2>
+          <p id="value-PM2" class="value-secondary"></p>
+        </div>
+        <div class="hodnotenie-PM2"></div>
+      </div>
+      <div class="progress-1" id="progress_0-11">
+        <div class="progress-bar-1">
+          <div class="progressing-11"></div>
+          <span class="circle-11"></span>
+        </div>
+      </div>
+      <img src="img/Prasnost.svg" alt="" class="seda-scale-11" />
+    </div>
+
+    <!-- PM 10 -->
+    <div class="secondary-value-widget">
+      <div class="secondary-value-div">
+        <div class="secondary-value-subdiv">
+          <h2>PM 10</h2>
+          <p id="value-PM_10" class="value-secondary">A</p>
+        </div>
+        <div class="hodnotenie-PM10"></div>
+      </div>
+      <div class="progress-1" id="progress_0-12">
+        <div class="progress-bar-1">
+          <div class="progressing-12"></div>
+          <span class="circle-12"></span>
+        </div>
+      </div>
+      <img src="img/Prasnost.svg" alt="" class="seda-scale-12" />
+    </div>
+
+
+
+
+  </div>
+
+  <div id="map"> </div>
+
+  <h5 class="h5sec"></h5>
+
+  <div class="celkovy-vysledok-div">
+    <h3>Celkový výsledok nameraných hodnôt</h3>
+    <p class="celkovy-vysledok-text"></p>
+  </div>
+
+  <!-- FOOTER -->
+
+  <img src="img/bubbles.png" alt="" class="bubbles2" />
+  <div class="footer2">
+    <img class="footer-info-1" src="img/location.svg" alt="" />
+  </div>
+  <img class="qr" src="img/qr.svg" alt="" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin=""/>
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+          integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+          crossorigin=""></script>
+
+  <div class="graph-box">
+    <canvas id="myChart"></canvas>
+  </div>
+  <div class="graph-box">
+    <canvas id="myChart2"></canvas>
+  </div>
+  <div class="graph-box">
+    <canvas id="myChart3"></canvas>
+  </div>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+></script>
+
+
+<script src="js/es6-promise.auto.min.js"></script>
+<script src="js/script.js"></script>
+
+<!-- <script type="module" src="index.js"></script> -->
+</body>
+</html>
